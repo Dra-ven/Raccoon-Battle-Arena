@@ -116,6 +116,10 @@ function spawnEnemy() {
     enemy.style.left = "800px";
     enemy.style.top = `${Math.random() * 360}px`;
 
+    enemy.style.backgroundImage = "Reaper-raccoon.png"; // Replace 'enemy-image.png' with your image file name
+    enemy.style.backgroundSize = "cover"; // Ensure the image covers the enemy div
+    enemy.style.backgroundRepeat = "no-repeat";
+
     gameGrid.appendChild(enemy);
     moveEnemy(enemy);
 }
