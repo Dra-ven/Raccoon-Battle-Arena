@@ -39,7 +39,7 @@ defenderOptions.forEach((option) => {
         option.classList.add("selected");
 
         selectedDefender = option.dataset.type;
-        startGameButton.disabled = false; // Enable the button
+        startGameButton.disabled = false; 
     });
 });
 
@@ -116,8 +116,8 @@ function spawnEnemy() {
     enemy.style.left = "800px";
     enemy.style.top = `${Math.random() * 360}px`;
 
-    enemy.style.backgroundImage = "Reaper-raccoon.png"; // Replace 'enemy-image.png' with your image file name
-    enemy.style.backgroundSize = "cover"; // Ensure the image covers the enemy div
+    enemy.style.backgroundImage = "url('Reaper-raccoon.png')"; 
+    enemy.style.backgroundSize = "cover";
     enemy.style.backgroundRepeat = "no-repeat";
 
     gameGrid.appendChild(enemy);
@@ -195,7 +195,7 @@ function updateScore() {
 
     if (score % 100 === 0) {
         enemySpeed += 5;
-        spawnInterval = Math.max(500, spawnInterval - 500); // Minimum spawn interval of 500ms
+        spawnInterval = Math.max(500, spawnInterval - 500); 
         clearInterval(spawnIntervalID);
         spawnEnemies();
     }
