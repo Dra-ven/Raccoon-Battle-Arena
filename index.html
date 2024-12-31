@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defense</title>
+    <link rel="stylesheet" href="defence.css">
+</head>
+<body>
+    <div id="selection-container">
+        <h1>🎮 Choose Your Defender</h1>
+        <div id="defender-selection">
+            <div class="defender-option" data-type="robo-raccoon">
+                <img src="robo-raccoon.jpeg" alt="Robo Raccoon">
+                <p>Robo Raccoon</p>
+            </div>
+            <div class="defender-option" data-type="mage-raccoon">
+                <img src="mage-raccoon.jpeg" alt="Mage Raccoon">
+                <p>Mage Raccoon</p>
+            </div>
+            <div class="defender-option" data-type="ice-man-raccoon">
+                <img src="ice-raccoon.jpeg" alt="IceMan Raccoon">
+                <p>IceMan Raccoon</p>
+            </div>
+        </div>
+        <button id="start-game-btn" disabled>Start Game</button>
+    </div>
+
+    <div id="game-container">
+        <h1>🎮 Defense</h1>
+        <div id="game-grid"></div>
+        <div id="controls">
+            <p id="score">Score: 0</p>
+        </div>
+    </div>
+
+    <script src="defence.js"></script>
+</body>
+</html>
